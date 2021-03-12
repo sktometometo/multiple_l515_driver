@@ -1,12 +1,12 @@
-int liderports[] = {0,1,2,3};
+int liderports[] = {32,33};
 int numport = sizeof(liderports)/sizeof(int);
 int frame_per_activation = 3;
 int duration_active = 60 + 33 * frame_per_activation;
 
-void init()
+void setup()
 {
     for ( int i=0; i<numport; i++ ) {
-        setup( liderports[i], OUTPUT );
+        pinMode( liderports[i], OUTPUT );
     }
 }
 
